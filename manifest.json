@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "PlotPeek Simple",
+  "version": "0.1.0",
+  "description": "Simple Chrome extension that reads the anime title from Crunchyroll and shows basic info.",
+  "permissions": ["tabs", "storage"],
+  "host_permissions": [
+    "https://www.crunchyroll.com/*",
+    "https://api.jikan.moe/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.crunchyroll.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PlotPeek"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
