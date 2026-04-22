@@ -22,6 +22,7 @@ function getPageInfo() {
   };
 }
 
+
 function sendPageInfo() {
   chrome.runtime.sendMessage({
     type: "SAVE_PAGE_INFO",
