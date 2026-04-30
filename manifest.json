@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "PlotPeek Simple",
-  "version": "0.1.0",
+  "name": "PlotPeek 0.1.1",
+  "version": "0.1.1",
   "description": "Simple Chrome extension that reads the anime title from Crunchyroll and shows basic info.",
   "permissions": ["tabs", "storage"],
   "host_permissions": [

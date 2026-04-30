@@ -1,4 +1,5 @@
 function getPageInfo() {
+  // simple page info grabber, kind of like a college project helper script
   const path = window.location.pathname || "";
   const pageTitle = document.title || "";
   const ogTitle = document.querySelector('meta[property="og:title"]')?.content || "";

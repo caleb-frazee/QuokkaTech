@@ -32,6 +32,69 @@ p {
   margin-top: 8px;
 }
 
+button {
+  border: none;
+  border-radius: 8px;
+  background: #1a73e8;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #1664c1;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+#charactersSection {
+  margin-top: 12px;
+}
+
+#charactersList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.character-card {
+  background: #f7f8fc;
+  border: 1px solid #e1e4ee;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.character-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.character-details {
+  font-size: 13px;
+  color: #333333;
+}
+
+.character-name {
+  margin: 0 0 4px 0;
+  font-weight: bold;
+}
+
+.character-meta {
+  margin: 0;
+  line-height: 1.3;
+}
+
 a {
   display: inline-block;
   margin-top: 10px;
